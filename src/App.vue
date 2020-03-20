@@ -7,6 +7,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import axios from 'axios'
 
 export default {
   name: 'App',
@@ -17,7 +18,13 @@ export default {
     return{
       age:30
     }
-  }  
+  },
+  mounted(){
+    let url="https://ayuteam.cn/mock/5e74749170c0e1696ee7a104/example/mock#!method=get";
+    axios.get(url).then(()=>{
+      
+    })
+  }
 }
 </script>
 
